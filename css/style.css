@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+header {
+  padding-left: 2vw;
+
+  font-weight: bold;
+
+  display: grid;
+
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-columns: 1fr;
+
+  background-image: url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  height: 75vh;
+
+  text-align: left;
+}
+
+header div a {
+  text-decoration: none;
+  font-size: 1em;
+  color: black;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header .escritorio {
+  text-shadow: 2px 2px 2px white;
+  padding-top: 5vh;
+}
+
+header .items {
+  padding-top: 1vh;
+}
+
+main {
+  font-size: 1em;
+
+  display: grid;
+
+  grid-template-rows: 0.4fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-gap: 10px;
+
+  background-image: linear-gradient(45deg, #6d6257, #cba);
+
+  text-align: center;
+  padding: 20px;
+}
+
+main#quem {
+  display: grid;
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-gap: 10px;
+
+  background-image: linear-gradient(45deg, #6d6257, #cba);
+
+  text-align: center;
+  padding: 20px;
+}
+
+main#contatos {
+  display: grid;
+
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+
+  grid-gap: 10px;
+
+  background-image: linear-gradient(45deg, #6d6257, #cba);
+
+  text-align: center;
+  padding: 20px;
+}
+
+main .service-description {
+  grid-column: 2/3;
+}
+
+main .service1,
+main .service2,
+main .service3 {
+  padding: 20px;
+
+  grid-row: 2/2;
+  background-color: #6d6259;
+
+  height: auto;
+}
+
+main .info {
+  background-color: #6d6259;
+}
+
+main .info-contato {
+  height: auto;
+  grid-row: auto;
+  background-color: #6d6259;
+  background-size: auto;
+}
+
+footer {
+  padding: 0px 20px 0 20px;
+
+  display: grid;
+
+  grid-template-rows: 1fr 0.5fr auto;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  background-color: #cba;
+}
+
+footer section {
+  text-align: center;
+  padding: 20px;
+}
+
+footer section ul {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+footer section ul a {
+  padding: 5px;
+}
+
+footer div.creditos h4,
+footer div.creditos ul {
+  font-size: 0.7em;
+
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+footer section.copyright {
+  font-size: 1em;
+
+  color: black;
+  padding: 0 0 10px 0;
+  align-items: center;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    height: 100%;
+  }
+
+  header {
+    display: grid;
+
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+
+    height: auto;
+  }
+
+  header div .items a {
+    background-color: red;
+    border-color: red;
+  }
+
+  main#inicio {
+    display: grid;
+
+    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  main .service-description,
+  main .service1,
+  main .service2,
+  main .service3 {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  main#quem {
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  footer section.copyright {
+    padding: 20px;
+  }
+
+  footer .endereco,
+  footer .horario,
+  footer .redes,
+  footer div .creditos,
+  footer section.copyright {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
