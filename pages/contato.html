@@ -27,21 +27,16 @@
     </header>
 
     <main id="contatos">
-      <section">
+      <section>
         <h1>Contato Direto</h1>
         <img src="../images/icons/003-telephone.png" alt="" />
-        <p>
-          (83) 9 9999-9999
-        </p>
+        <p>(83) 9 9999-9999</p>
         <img src="../images/icons/005-email.png" alt="" />
-        <p>
-          Email: aaa@bbb.com
-        </p>
+        <p>Email: aaa@bbb.com</p>
         <img src="../images/icons/004-skype.png" alt="" />
-        <p>
-          Skype: aaabbb
-        </p>
+        <p>Skype: aaabbb</p>
       </section>
+
       <section>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.917325444584!2d-34.875658985680595!3d-7.1355589719690595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB%20-%20Campus%20Jo%C3%A3o%20Pessoa!5e0!3m2!1spt-BR!2sbr!4v1638566889421!5m2!1spt-BR!2sbr"
@@ -52,6 +47,60 @@
           loading="lazy"
         ></iframe>
       </section>
+
+      <form
+        action="https://formsubmit.co/jppereira31.jp@gmail.com"
+        method="POST"
+      >
+        <h1>Envie-nos uma mensagem</h1>
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5501/pages/sucesso.html"
+        />
+        <label for="nome-user">Nome</label>
+        <input
+          type="text"
+          name="nome-user"
+          id="nome-user"
+          placeholder="Digite seu nome"
+          required
+        />
+        <br />
+        <label for="email">Email para Contato</label>
+        <input
+          type="email"
+          name="email-user"
+          id="email"
+          placeholder="Digite seu email"
+          required
+        />
+        <br />
+        <div>Área em que necessita informações?</div>
+        <div>
+          <input type="radio" name="area" id="trabalho" value="trabalho" />
+          <label for="trabalho">Direito do Trabalho</label>
+
+          <input type="radio" name="area" id="civil" value="civil" />
+          <label for="civil">Direito Civil</label>
+
+          <input type="radio" name="area" id="consumidor" value="consumidor" />
+          <label for="consumidor">Direito do Consumidor</label>
+        </div>
+        <br />
+        <label for="resumo">Envie-nos um resumo do seu problema</label>
+        <br />
+        <textarea
+          name="resumo"
+          id="resumo"
+          cols="50"
+          rows="10"
+          placeholder="Digite aqui..."
+        ></textarea>
+        <br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar Informações" />
+      </form>
     </main>
 
     <footer>
@@ -68,13 +117,15 @@
         <h1>Redes Sociais</h1>
         <ul>
           <li>
-          <a href="https://www.facebook.com/"
-          ><img src="../images/icons/002-facebook.png" alt=""
-        /></a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/"><img src="../images/icons/001-instagram.png" alt="" /></a>
-        </li>
+            <a href="https://www.facebook.com/"
+              ><img src="../images/icons/002-facebook.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><img src="../images/icons/001-instagram.png" alt=""
+            /></a>
+          </li>
         </ul>
       </section>
       <div class="creditos">
@@ -129,7 +180,6 @@
         </ul>
       </div>
       <section class="copyright">©2021 JoséPereira - LM-IFPB</section>
-
     </footer>
   </body>
 </html>
